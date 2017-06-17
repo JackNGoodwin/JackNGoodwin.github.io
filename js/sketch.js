@@ -6,7 +6,7 @@ function setup() {
 
     pos = createVector(random(width), random(height));
     r = createVector(random(-1, 1), random(-1, 1));
-    seed = createVector(random(0, 0.2), random(0, 0.2));
+    seed = createVector(random(0, 0.02), random(0, 0.02));
 }
 
 function draw() {
@@ -28,6 +28,10 @@ function draw() {
     if (pos.x < 0) pos.x = width;
     if (pos.y > height) pos.y = 0;
     if (pos.y < 0) pos.y = height;
+
+    textSize(12);
+    strokeWeight(0.7);
+    text(seed.x + ", " + seed.y, 50, height - 20);
 }
 
 function windowResized() {
