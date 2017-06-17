@@ -20,7 +20,9 @@ body {
 }
 
 #index #title {
-  margin-left: 5px;
+  /*top: 10px;*/
+  left: 10px;
+  position: fixed;
   /*float: left;*/
   /*text-align: right;*/
   /*border: 1px solid black;*/
@@ -32,6 +34,7 @@ body {
   position: fixed;
   width: 100%;
   bottom: 0px;
+  right: 10px;
 }
 
 #index canvas {

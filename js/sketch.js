@@ -1,5 +1,4 @@
 var pos, r;
-var s = 10;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -13,7 +12,7 @@ function draw() {
 
     noFill();
     stroke(50);
-    ellipse(pos.x, pos.y, s, s);
+    ellipse(pos.x, pos.y, 1, 1);
 
     pos.add((noise(r.x) * 2) - 1, (noise(r.y) * 2) - 1);
     r.add(0.003, 0.0035);
@@ -22,4 +21,8 @@ function draw() {
     if (pos.x < 0) pos.x = width;
     if (pos.y > height) pos.y = 0;
     if (pos.y < 0) pos.y = height;
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
