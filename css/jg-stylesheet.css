@@ -20,17 +20,13 @@ body {
 }
 
 #index #title {
-  /*top: 10px;*/
+  top: 20px;
   left: 10px;
   position: fixed;
-  /*float: left;*/
-  /*text-align: right;*/
-  /*border: 1px solid black;*/
 }
 
 #index #contact {
   text-align: right;
-  /*border: 1px solid black;*/
   position: fixed;
   width: 100%;
   bottom: 0px;
@@ -45,3 +41,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#index nav {
+  margin: 0; padding: 0;
+  top: 55px; left: 20px;
+  position: fixed;
+  font-size: 0.8em;
+}
+
+#index nav ul {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+#index nav a:link     {text-decoration: none; border-bottom: 1px dashed #145252; color: #145252;}
+#index nav a:visited  {text-decoration: none; border-bottom: 1px dashed #145252; color: #145252;}
+#index nav a:hover    {text-decoration: none; border-bottom: 1px dashed #293d3d; color: #293d3d;}
+#index nav a:active   {text-decoration: none; border-bottom: 1px dashed #293d3d; color: #293d3d;}
