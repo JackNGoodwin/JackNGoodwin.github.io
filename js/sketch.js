@@ -22,7 +22,7 @@ function draw() {
     ellipse(pos.x, pos.y, 1, 1);
 
     pos.add((noise(r.x) * 2) - 1, (noise(r.y) * 2) - 1);
-    r.add(0.08, 0.012);
+    r.add(seed.x, seed.y);
 
     if (pos.x > width) pos.x = 0;
     if (pos.x < 0) pos.x = width;
