@@ -6,7 +6,7 @@ function setup() {
 
     pos = createVector(random(width), random(height));
     r = createVector(random(-1, 1), random(-1, 1));
-    seed = createVector(random(0, 1), random(0, 1));
+    seed = createVector(random(0, 0.2), random(0, 0.2));
 }
 
 function draw() {
