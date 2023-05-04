@@ -1,5 +1,5 @@
 var pos, r;
-var seed;
+var speed, seed;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -7,6 +7,7 @@ function setup() {
     pos = createVector(random(width), random(height));
     r = createVector(random(-1, 1), random(-1, 1));
     seed = createVector(random(0, 0.02), random(0, 0.02));
+    speed = 10;
 }
 
 function draw() {
@@ -21,7 +22,7 @@ function draw() {
     stroke(50);
     ellipse(pos.x, pos.y, 1, 1);
 
-    pos.add((noise(r.x) * 4) - 1, (noise(r.y) * 4) - 1);
+    pos.add((noise(r.x) * speed) - 1, (noise(r.y) * speed) - 1);
     r.add(seed.x, seed.y);
 
     if (pos.x > width) pos.x = 0;
